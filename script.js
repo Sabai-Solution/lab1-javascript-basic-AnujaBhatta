@@ -1,34 +1,31 @@
 function validateEmptyValues(){
-	var txtEmail = document.getElementById('txtEmail').value;
-	var txtUsername = document.getElementById('txtUsername').value;
-	var txtPassword = document.getElementById('txtPassword').value;
+	var txtEmail=document.getElementById("txtEmail").value;
+	var txtUser=document.getElementById("txtUser").value;
+	var txtPassword=document.getElementById("txtPassword").value;
 
-	var appendError = "";
-	if (txtEmail =="") {
-		appendError ="email";
-		appendError.innerText = "Email cannot be empty"
-
+	var appendError="";
+	if(txtEmail==""){
+		appendError="email";
 	}
-	if (txtUsername =="") {
-		if (appendError !="") {
-			appendError =appendError + "and";
+	if(txtUser==""){
+		if(appendError!=""){
+			appendError=appendError+"and";
 		}
-		appendError=appendError +"username";
-		appendError.innerText = "Email and username cannot be empty"
+		appendError=appendError+"un";
 	}
-	if (txtPassword =="") {
-		if (appendError !="") {
-			appendError =appendError + "and";
+	if(txtPassword==""){
+		if(appendError!=""){
+			appendError=appendError+"and";
 		}
-		appendError =appendError + "password";
-		appendError.innerText = "Email , usernameand password cannot be empty"
-	}
-	if (appendError !="") {
-			appendError =appendError + "cannot be empty.";
-			alert("appendError");
-			return true;
-		}
-		else{
-			return false;
-		}
+		appendError=appendError+"Password";
+	
+}
+if(appendError!=""){
+	appendError=appendError+"can not be empty.";
+	alert(appendError);
+	return false;
+}
+else{
+return true;
+}
 }
