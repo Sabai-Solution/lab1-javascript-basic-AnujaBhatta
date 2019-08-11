@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic table using hard way</title>
+</head>
+<body>
+<!--<table>
+	<thead>
+		<tr>
+			<td> S.No.</td>
+			<td> Name </td>
+		</tr>
+		<tbody>
+			<tr>
+				<td> 1 </td>
+				<td> Ram </td>
+			</tr>
+			<tr>
+				<td> 2 </td>
+				<td> Phurkima </td>
+    		</tbody>
+	</thead>
+</table>-->
+<script type="text/javascript">
+	var studentList = [
+	                    {"sno":1,"name":"Ram"},
+	                    {"sno":2,"name":"Phurkima"},
+	                    ];
+
+    var my_table = "<table border='1'><tr><td>sno</td><td>Name</td></tr>"
+    for (var i = 0; i <studentList.length ; i++) 
+    {
+    	
+    	my_table +="<tr>";
+    	my_table +="<td>";
+    	my_table +=studentList[i].sno;
+    	my_table +="</td>";
+    	my_table +="<td>";
+    	my_table +=studentList[i].nSAame;
+    	my_table +="</td>";
+    	my_table +="</tr>"
+    	
+
+    }
+    document.write(my_table);
+
+ </script>
+</body>
+</html>
