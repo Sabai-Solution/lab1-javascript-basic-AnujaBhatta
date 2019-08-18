@@ -40,7 +40,7 @@ for (i = 0; i < studentList.length; i++)
     var tr = document.createElement('tr');
     //TABLE COLUMNS
     for (var key in studentList[i]) {
-        var td = document.createElement('td')
+        var td = document.createElement('td');
         td.appendChild(document.createTextNode(studentList[i][key]));
         tr.appendChild(td)
     }
