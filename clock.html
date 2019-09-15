@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clock</title>
+</head>
+<body onload="startTime()">
+<h1>Clock Displaying Demo</h1>
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date(); 
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds(); 
+document.getElementById('clock').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',1000);
+} 
+</script>
+<div id="clock"></div>
+</body>
+</html>
