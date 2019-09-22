@@ -4,7 +4,7 @@
 	<title>RegExp</title>
 </head>
 <body>
-<h1>RegExp</h1>
+<h1>Demo for the use of RegExp</h1>
 <script type='text/javascript'>
 
 function Validate_Email()
@@ -18,7 +18,7 @@ if(v.match(patt))
  else 
  {
    document.getElementById('elem').focus(); 
-   document.write(" You have entered an invalid IP address!");
+   document.write(" You have entered an invalid Email!");
  }
 }
 
@@ -31,9 +31,9 @@ function Validate_IPaddress()
   }  
   else
   {
-  	 document.write("You have entered an invalid IP address!");
-  	 val.name.focus();
-     return (false) ;
+      document.write("You have entered an invalid IP Address!");
+      val.name.focus();
+      return (false) ;
 
   }
  }  
@@ -47,7 +47,7 @@ function Validate_DomainName()
     }
     else 
     {
-        document.write("You have entered an invalid domain name!");
+        document.write("You have entered an invalid Domain Name!");
         val.name.focus();
         return false;
     }
