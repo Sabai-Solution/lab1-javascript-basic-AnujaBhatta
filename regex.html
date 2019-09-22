@@ -25,7 +25,7 @@ if(v.match(patt))
 function Validate_IPaddress()
  {  
 	var val = document.ipaddress;
-  if (/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(val.name.value)) 
+  if (/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(val.ip.value)) 
   {  
     document.write("IP address is valid");
   }  
@@ -62,14 +62,14 @@ Email ID: <input type='text' id='elem'/>
 </form>
 
 <h2>Demo for IPV4 Address Validation</h2>
-<form name="ipaddress" action="button"  method="post" ">
-Domain Name : <input type="text" value="" id="name" name="name"  />
+<form name="ipaddress" method="post" >
+IP Address : <input type="text" id="ip" name="name"  />
 <input type="button" value="Enter" onclick="return Validate_IPaddress();">
 </form>
 
 <h2>Demo for Domain Name Validation</h2>
-<form name="frmDomain" action="button"  method="post" ">
-Domain Name : <input type="text" value="" id="name" name="name"  />
+<form name="frmDomain" method="post" >
+Domain Name : <input type="text" id="name" name="name"  />
 <input type="button" value="Click" onclick="return Validate_DomainName();">
 </form>
 
